@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(#3D0000, #000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
+
+nav{
+     background-color: #000000b6;
+     text-align: center;
+     height:70px;
+     position: fixed;
+     width: 100%;
+     z-index: 10;
+     top: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+}
+nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 10;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.nomPrenom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 346px;
+}
+
+.nom{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.prenom{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+main{
+    text-align: center;
+}
+.objectif{
+    text-align: center;
+    font-size: 30px;
+}
+.swiper-web, .swiper-programme{
+    position: relative;
+    height: 122px;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.swiper-wrapper{
+    transition-timing-function : linear;
+}
+
+.swiper-slide{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.829);
+    width: 260px !important;
+    color: black;
+    font-size: 40px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+}
+h2{
+    font-size: 59px;
+    text-transform: uppercase;
+}
+.projets img{
+    width: 100%;
+    height: 100%;
+    border-radius: 66px;
+    object-fit: cover;
+}
+.media{
+    height: 815px;
+    width: 100%;
+    border-radius: 66px;
+}
+.projets{
+    font-size: 40px;
+    text-align: left;
+    padding: 50px;
+    position: relative;
+}
+
+.projets p{
+    padding: 50px;
+}
+
+.projets a{
+    color: inherit;
+}
+
+.projet{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+}
+.info{
+    display: flex;
+    align-items: center;
+}
+@media (max-width:1000px){
+    .projet{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
