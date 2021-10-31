@@ -1,7 +1,9 @@
 *{
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 body{
     background-image: linear-gradient(#3D0000, #000000);
     background-repeat: no-repeat;
@@ -126,6 +128,17 @@ h2{
 .info{
     display: flex;
     align-items: center;
+}
+.cordonnees{
+    font-size: 69px;
+}
+.coordonnee{
+    font-size: 40px;
+    margin-top: 24px;
+}
+footer{
+    padding: 50px;
+    text-align: center;
 }
 @media (max-width:1000px){
     .projet{
