@@ -8,9 +8,8 @@ body{
     background-image: linear-gradient(#3D0000, #000000);
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: white !important;
     width: 100%;
-    position: relative;
     margin: 0;
 }
 
@@ -90,44 +89,42 @@ main{
     text-align: center;
 }
 h2{
-    font-size: 59px;
+    font-size: 59px !important;
     text-transform: uppercase;
 }
 .projets img{
     width: 100%;
-    height: 100%;
     border-radius: 66px;
     object-fit: cover;
+    display: block;
 }
 .media{
-    height: 815px;
     width: 100%;
-    border-radius: 66px;
+    text-align: center;
 }
 .projets{
-    font-size: 40px;
-    text-align: left;
-    padding: 50px;
-    position: relative;
+    font-size: 30px;
+    padding: 30px;
+}
+.section{
+    margin-top:60px;
 }
 
-.projets p{
-    padding: 50px;
-}
 
 .projets a{
     color: inherit;
 }
-
-.projet{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    width: 100%;
+.projets p{
+    display: block;
 }
+
+.projet h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+
 .info{
-    display: flex;
-    align-items: center;
+    width: 100%;
 }
 .cordonnees{
     font-size: 69px;
@@ -142,7 +139,6 @@ footer{
 }
 @media (max-width:1000px){
     .projet{
-        grid-template-columns: 1fr;
         text-align: center;
     }
 }

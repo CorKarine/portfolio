@@ -2,18 +2,30 @@
 <html lang="fr">
   <head>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+        integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+        crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 
     <title>Karine Cormier</title>
     <meta charset="UTF-8" />
   </head>
   <body>
-      <nav>
-        <a href="#competance">Compétences</a>
-        <a href="#projet">Projets</a>
-        <a href="#coordonnee">Coordonnées</a>
-      </nav>
+    <nav>
+      <a href="#competance">Compétences</a>
+      <a href="#projet">Projets</a>
+      <a href="#coordonnee">Coordonnées</a>
+    </nav>
     <header>
       <div class="nomPrenom">
         <div class="prenom">
@@ -40,83 +52,116 @@
       </div>
     </header>
     <main>
-      <div id="competance">
+      <div id="competance" class="section">
         <h2>Compétences</h2>
-      <div class="swiper-web">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Bootstrap</div>
-          <div class="swiper-slide">Wordpress</div>
-          <div class="swiper-slide">PHP</div>
-          <div class="swiper-slide">HTML</div>
-          <div class="swiper-slide">CSS</div>
-          <div class="swiper-slide">JavaScript</div>
-          <div class="swiper-slide">GSA</div>
-          <div class="swiper-slide">Swiper</div>
+        <div class="swiper-web">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Bootstrap</div>
+            <div class="swiper-slide">Wordpress</div>
+            <div class="swiper-slide">PHP</div>
+            <div class="swiper-slide">HTML</div>
+            <div class="swiper-slide">CSS</div>
+            <div class="swiper-slide">JavaScript</div>
+            <div class="swiper-slide">GSA</div>
+            <div class="swiper-slide">Swiper</div>
+          </div>
+        </div>
+        <div class="swiper-programme" dir="rtl">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Maya</div>
+            <div class="swiper-slide">DaVinci Resolve</div>
+            <div class="swiper-slide">Adobe XD</div>
+            <div class="swiper-slide">Adobe Photoshop</div>
+            <div class="swiper-slide">Adobe Illustrator</div>
+            <div class="swiper-slide">OBS Studio</div>
+            <div class="swiper-slide">Unity</div>
+            <div class="swiper-slide">Max 8</div>
+          </div>
         </div>
       </div>
-      <div class="swiper-programme" dir="rtl">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Maya</div>
-          <div class="swiper-slide">DaVinci Resolve</div>
-          <div class="swiper-slide">Adobe XD</div>
-          <div class="swiper-slide">Adobe Photoshop</div>
-          <div class="swiper-slide">Adobe Illustrator</div>
-          <div class="swiper-slide">OBS Studio</div>
-          <div class="swiper-slide">Unity</div>
-          <div class="swiper-slide">Max 8</div>
-        </div>
-      </div>
-    </div>
-      <div id="projet">
+      <div id="projet" class="section">
         <h2>Projets</h2>
-        <div class="projets">
-        <div class='projet lecteur'>
-          <div class="media lecteur--media">
-          <img src="medias/lecteur.png" alt="">
+        <div class="projets container">
+          <section class='lecteur projet'>
+          <div class="row">
+            <div class="media col-12 col-lg-6 lecteur--media">
+              <h3>Lecteur vidéo</h3>
+              <img src="medias/lecteur.png" alt="" />
+            </div>
+            <div class="info col-12 col-lg-6 order-2  lecteur--info">
+              <p>
+                Création d’un lecteur vidéo fonctionnel à l’aide de javascript
+                et d’animation css. Contrôle de la vidéo a l'aide de JavaScript
+                et animation en CSS <br />
+                <a href="https://codepen.io/corkarine/pen/yLabPZb"
+                  >Voir sur codepen</a
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="projet day6">
+          <div class="row">
+            <div class="info col-12 col-lg-6 day6--info">
+              <p>
+                Création d’un site web en équipe de deux présentant un groupe de
+                musique. Animation d’un spritesheet à l’aide d’un scrolltrigger,
+                animation gsap, création d’un acf sur wordpress pour un rest
+                api, utilisation de boostrap et swipper Responsable de la page
+                discographie.
+                <br />
+                <a href="">Voir plus</a>
+              </p>
+            </div>
+            <div class="media col-12 col-lg-6 day6--media">
+              <h3>Megazord</h3>
+              <img src="medias/day6.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="projet maya">
+          <div class="row">
+            <div class="media col-12 col-lg-6 maya--media">
+              <h3>Modélisation d’une scène</h3>
+              <img src="medias/rendu_vu_devant.jpg" alt="" />
+            </div>
+            <div class="info col-12 col-lg-6 maya--info">
+              <p>
+                Création en équipe d’une scène 3D. La scène doit raconter une
+                histoire, évoquer un mystère ou faire vivre une émotion
+                particulière au spectateur. En charge de la modélisation des
+                citrouilles, de l'éclairage et du rendu<br />
+                <a href="">Voir plus</a>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="projet maquette">
+          <div class="row">
+            <div class="info col-12 col-lg-6 maquette--info">
+              <p>
+                Création des maquettes filaire, graphique et prototype d’un site
+                Web d’entreprise de type vitrine.<br />
+                <a href="https://codepen.io/corkarine/pen/yLabPZb">Voir plus</a>
+              </p>
+            </div>
+            <div class="media col-12 col-lg-6 maquette--media">
+              <h3>Maquette site vitrine</h3>
+              <img src="medias/maquette.png" alt="" />
+            </div>
+          </div>
         </div>
-        <div class="info lecteur--info">
-          <p>Création d’un lecteur vidéo fonctionnel à l’aide de javascript et d’animation css. Contrôle de la vidéo a l'aide de JavaScript et animation en CSS <br>
-          <a href="https://codepen.io/corkarine/pen/yLabPZb">Voir sur codepen</a></p> 
-        </div>
-        </div>
-        <div class='projet day6'>
-        <div class="info day6--info">
-          <p>Création d’un site web en équipe de deux présentant un groupe de musique.Arrimer les différentes composantes réalisées au cours de la session afin d’obtenir un site web complet.
-            Animation d’un spritesheet à l’aide d’un scrolltrigger, animation gsap, création d’un acf sur wordpress pour un rest api, utilisation de boostrap et swipper.
-            <br>
-          <a href="">Voir plus</a></p> 
-        </div>
-        <div class="media lecteur--media">
-          <img src="medias/day6.png" alt="">
-        </div>
-        </div>
-        <div class='projet maya'>
-          <div class="media lecteur--media">
-          <img src="medias/rendu_vu_devant.jpg" alt="">
-        </div>
-        <div class="info maya--info">
-          <p>Création en équipe d’une scène 3D.  La scène doit raconter une histoire, évoquer un mystère ou faire vivre une émotion particulière au spectateur. En charge de la modélisation des citrouilles, de l'éclairage et du rendu<br>
-          <a href="">Voir plus</a></p> 
-        </div>
-        </div>
-        <div class='projet maquette'>
-        <div class="info maquette--info">
-          <p>Création des maquettes filaire, graphique et prototype d’un site Web d’entreprise de type vitrine.<br>
-          <a href="https://codepen.io/corkarine/pen/yLabPZb">Voir plus</a></p> 
-        </div>
-        <div class="media lecteur--media">
-          <img src="medias/maquette.png" alt="">
-        </div>
-        </div>
-        </div>
+      </section>
       </div>
     </main>
     <footer>
-      <div id="coordonnee" class='coordonnees'>
+      <div id="coordonnee" class="coordonnees section">
         <h2>Coordonnées</h2>
         <div class="coordonnee coordonnee--nom">Karine Cormier</div>
         <div class="coordonnee coordonnee--ville">Deux-Montagnes</div>
-        <div class="coordonnee coordonnee--courriel">karine.cormier99@gmail.com</div>
+        <div class="coordonnee coordonnee--courriel">
+          karine.cormier99@gmail.com
+        </div>
       </div>
     </footer>
     <script src="script.js"></script>
