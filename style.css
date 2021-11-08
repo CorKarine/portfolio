@@ -128,8 +128,11 @@ h2{
     display: block;
 }
 .lettre:hover{
-    color: red;
+    color: rgb(100, 0, 0);
     cursor: default;
+}
+a:hover{
+    color: rgb(136, 0, 0) !important;
 }
 .projet h3{
     font-size: 40px;
