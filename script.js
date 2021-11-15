@@ -1,4 +1,3 @@
-const lettres = document.querySelectorAll('lettre');
 var swiperWeb = new Swiper(".swiper-web", {
     slidesPerView: 'auto',
     spaceBetween: 39,
@@ -48,9 +47,3 @@ var swiperWeb = new Swiper(".swiper-web", {
     .from('.nomR2', {}, "<0.2");
 
 animation.play();
-lettres.forEach(lettre => {
-  
-lettre.addEventListener('mouseEnter', function(){
-  animation.pause();
-})
-});
